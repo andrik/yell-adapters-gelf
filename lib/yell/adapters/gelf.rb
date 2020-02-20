@@ -67,7 +67,7 @@ module Yell #:nodoc:
           'level'     => Severities[event.level],
           'timestamp' => event.time.to_f,
           'host'      => source || event.hostname,
-
+          'request_id' => event.request_id,
           'file'      => event.file,
           'line'      => event.line,
           '_method'   => event.method,
